@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University Application Form.</title>
+	<style>
+		body {
+            background-color: #ADD8E6; /* Light Blue background color */
+            font-family: Arial, sans-serif; /* Set your desired font-family */
+        }
+
+		#main-header{
+			text-align: center;
+			background-color: black;
+			color: white;
+			padding: 10px;
+			}
+
+			h1 {
+				background-color: #87CEEB;
+				color: black;
+				padding: 20px;
+				text-align: center;
+			}
+			
+			h2 {
+				margin-bottom:5px;
+			}
+			
+			h3 {
+				margin-bottom: 5px;
+			}
+			
+			p {
+				margin-bottom: 5px;
+			}
+		</style>
+</head>
+<body>
+	<!-- Headings -->
+		<h1>Ghana Communication Technology University Application Form</h1>
+
+  <form action="submit_form.php" method="post" enctype="multipart/form-data">
+	 <br>
+	 
+	 <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+     
+	 Student Name <input type="text" name="visitor_name" size="35"> <br>
+	<br>
+	
+	Date of Birth <input type="date" name="bday"> <br />
+	<br>
+	
+	<legend> Gender </legend>
+	<input type="radio" name=“sex" value=“male“ checked="checked" /> Male
+	<input type="radio" name=“sex" value=“Female" /> Female 
+	<br>
+	<br>
+	
+	Nationality <input type="text" name="v_address" size="25"> <br> 
+	<br>
+	
+	Country <input type="text" name="visitor_city" size="20">
+	<br>
+	<br>
+	
+	Region <input type="text" name="visitor_region" size="25"> <br>
+	<br>
+	
+	Address <input type="text" name="v_address" size="25"> <br> 
+	<br>
+	
+	<legend> Marital Status </legend>
+	<input type="radio" name=“marital status" value=“Single“ checked="checked" /> Single
+	<input type="radio" name=“marital status" value=“Married" /> Married
+	<br>
+	<br>
+	
+	Telephone Number <input type="text" name="v_address" size="20"> <br> 
+	<br>
+	
+	Email <input type="text" name="v_address" size="20"> <br> 
+	<br>
+	 
+    </fieldset>
+	<br>
+	
+	            <!-- Upload Picture -->
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+
+	
+	<!-- Guardian Information -->
+    <fieldset>
+      <legend>Guardian's Information</legend>
+		Father's Name <input type="text" name="visitor_name" size="35"> Occupation <input type="text" name="visitor_name" size="20"> <br><br>
+		<br>
+		
+		Mother's Name <input type="text" name="visitor_name" size="35"> Occupation <input type="text" name="visitor_name" size="20"> <br><br>
+		<br>	
+    </fieldset>
+	<br>
+
+	 <!-- Academic Information -->
+    <fieldset>
+      <legend>Academic Information</legend>
+      <label for="program">Academic Program:</label>
+      <select id="program" name="program" required>
+        <option value="computerScience">Computer Science</option>
+        <option value="computerEngineering">Computer Engineering</option>
+		<option value="informationTechnology">Information Technology</option>
+      </select>
+
+      <label for="gpa">Highschool CGPA:</label>
+      <input type="text" id="gpa" name="gpa" required>
+	  <br>
+		<br>
+		
+      <!-- Academic Results Slip Upload -->
+      <label for="resultsSlip">Upload Academic Results Slip:</label>
+      <input type="file" id="resultsSlip" name="resultsSlip" accept=".pdf, .doc, .docx" required>
+    </fieldset>
+	<br>
+
+	<!-- Submit Button -->
+    <button type="submit">Submit Application</button> <input type="reset" value="Start Over"></form> 
+	</form>
+	
+</body>
+</html>
